@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, {Component} from 'react';
 
 class Counter extends Component {
   state = {
@@ -6,22 +6,22 @@ class Counter extends Component {
   };
 
   handleChange = event => {
-    const { value } = event.target;
+    const {value} = event.target;
     if (value >= 0) {
-      this.setState({ value });
+      this.setState({value});
     }
   };
 
   decrement = () => {
     if (this.state.value >= 1) {
-      this.setState(state => ({ value: state.value - 1 }));
-        console.log(this.state.value);
+      this.setState(state => ({value: state.value - 1}));
+      console.log(this.state.value);
     }
   };
 
   increment = () => {
-    this.setState(state => ({ value: state.value + 1 }));
-      console.log(this.state.value);
+    this.setState(state => ({value: state.value + 1}));
+    console.log(this.state.value);
   };
 
   render() {

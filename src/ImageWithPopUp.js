@@ -1,6 +1,6 @@
-import React, { Component } from "react";
-import Img from "react-image";
-import { number, string } from "prop-types";
+import React, {Component} from 'react';
+import Img from 'react-image';
+import {number, string} from 'prop-types';
 
 class ImageWithPopUp extends Component {
   static propTypes = {
@@ -10,7 +10,7 @@ class ImageWithPopUp extends Component {
   static defaultProps = {
     timeout: 3000,
     image:
-      "https://thumbs.dreamstime.com/z/woman-customer-care-service-support-icon-vector-flat-color-pictogram-illustration-person-profile-human-avatar-call-97288367.jpg"
+      'https://thumbs.dreamstime.com/z/woman-customer-care-service-support-icon-vector-flat-color-pictogram-illustration-person-profile-human-avatar-call-97288367.jpg'
   };
   state = {
     shown: false
@@ -21,16 +21,16 @@ class ImageWithPopUp extends Component {
       clearTimeout(this.token);
       this.token = null;
     }
-    const { timeout } = this.props;
+    const {timeout} = this.props;
     console.log(this.state.shown);
     if (!this.state.shown && timeout) {
       this.token = setTimeout(() => this.toggle(), timeout);
     }
-    this.setState(state => ({ shown: !state.shown }));
+    this.setState(state => ({shown: !state.shown}));
   };
 
   render() {
-    const { image } = this.props;
+    const {image} = this.props;
     const textBubble = (
       <div className="speech-bubble">
         If you ever need help or additional info, just give me a tap!

@@ -43,14 +43,13 @@ class BreadCrumbs extends Component {
                 : "small-crumb";
           const innerStyle =
             index === currentIndex ? { display: "inline-block" } : { display: "none" };
-          console.log(innerStyle);
           return (
             <div
               className={cssClass}
               key={step}
               onClick={() => this.stepClicked(index)}
             >
-              <div className="currentStep" style={innerStyle}/>
+              <div className="current-step" style={innerStyle}/>
             </div>
           );
         })}

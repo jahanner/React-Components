@@ -1,23 +1,34 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
 
+class Test1 extends Component {
+    render() {
+        return (
+            <div>
+                <img
+                    className="img"
+                    src="http://farm8.staticflickr.com/7384/8730654121_05bca33388_z.jpg"
+                />
+            </div>
+        );
+    }
+}
+
 class PhotoSwipe2 extends Component {
   render() {
     let settings = {
       dots: true,
-      infinite: true,
+      infinite: false,
       speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1,
-        arrows: true
+      arrows: true,
+      autoplay: true
     };
     return (
       <Slider {...settings}>
         <div>
-          <img
-            className="img"
-            src="http://farm8.staticflickr.com/7384/8730654121_05bca33388_z.jpg"
-          />
+          <Test1/>
         </div>
         <div>
           <img

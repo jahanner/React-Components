@@ -121,14 +121,14 @@ input::-webkit-inner-spin-button {
   width: 30%;
 }
 
-.slick-prev {
-  left: 5% !important;
-  z-index: 1;
-}
-.slick-next {
-  right: 5% !important;
-  z-index: 1;
-}
+/*.slick-prev {*/
+  /*left: 5% !important;*/
+  /*z-index: 1;*/
+/*}*/
+/*.slick-next {*/
+  /*right: 5% !important;*/
+  /*z-index: 1;*/
+/*}*/
 
 .small-crumb {
   height: 15px;

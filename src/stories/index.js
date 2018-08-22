@@ -11,6 +11,9 @@ import "../App.css";
 import ThumbsUp from "../ThumbsUp";
 import BreadCrumbs from "../BreadCrumbs";
 import PhotoSwipe from "../PhotoSwipe";
+import PhotoSwipe2 from "../PhotoSwipe2";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 storiesOf("Welcome", module).add("to Storybook", () => (
   <Welcome showApp={linkTo("Button")} />
@@ -35,3 +38,5 @@ storiesOf("Crumbs", module).add("Of Bread", () => (
 ));
 
 storiesOf("Photo", module).add("Swipe", () => (<PhotoSwipe/>));
+
+storiesOf("Test Photo", module).add("Swipe", () => <PhotoSwipe2/>);

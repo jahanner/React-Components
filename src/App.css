@@ -109,7 +109,6 @@ input::-webkit-inner-spin-button {
 .img {
   position: relative;
   width: 100%;
-  height: auto;
   background: no-repeat center;
   background-size: cover;
 }
@@ -121,14 +120,14 @@ input::-webkit-inner-spin-button {
   width: 30%;
 }
 
-/*.slick-prev {*/
-  /*left: 5% !important;*/
-  /*z-index: 1;*/
-/*}*/
-/*.slick-next {*/
-  /*right: 5% !important;*/
-  /*z-index: 1;*/
-/*}*/
+.slick-prev {
+  left: 5% !important;
+  z-index: 1;
+}
+.slick-next {
+  right: 5% !important;
+  z-index: 1;
+}
 
 .small-crumb {
   height: 15px;

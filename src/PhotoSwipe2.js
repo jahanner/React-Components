@@ -19,22 +19,16 @@ class PhotoSwipe2 extends Component {
     let settings = {
       dots: true,
       infinite: false,
-      speed: 500,
+      speed: 1000,
       slidesToShow: 1,
       slidesToScroll: 1,
-      arrows: true,
+      arrows: false,
       autoplay: true
     };
     return (
       <Slider {...settings}>
         <div>
           <Test1/>
-        </div>
-        <div>
-          <img
-            className="img"
-            src="http://farm8.staticflickr.com/7347/8731666710_34d07e709e_z.jpg"
-          />
         </div>
         <div>
           <img
@@ -46,12 +40,6 @@ class PhotoSwipe2 extends Component {
           <img
             className="img"
             src="http://farm8.staticflickr.com/7384/8730654121_05bca33388_z.jpg"
-          />
-        </div>
-        <div>
-          <img
-            className="img"
-            src="http://farm8.staticflickr.com/7347/8731666710_34d07e709e_z.jpg"
           />
         </div>
         <div>

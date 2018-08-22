@@ -8,7 +8,7 @@ class ImageWithPopUp extends Component {
     image: string
   };
   static defaultProps = {
-    timeout: 3000,
+    timeout: 2500,
     image:
       'https://thumbs.dreamstime.com/z/woman-customer-care-service-support-icon-vector-flat-color-pictogram-illustration-person-profile-human-avatar-call-97288367.jpg'
   };

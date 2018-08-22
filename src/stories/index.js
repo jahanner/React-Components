@@ -10,20 +10,20 @@ import ImageWithPopUp from "../ImageWithPopUp";
 import "../App.css";
 import ThumbsUp from "../ThumbsUp";
 import BreadCrumbs from "../BreadCrumbs";
-import Test from "../Test";
+import PhotoSwipe from "../PhotoSwipe";
 
 storiesOf("Welcome", module).add("to Storybook", () => (
   <Welcome showApp={linkTo("Button")} />
 ));
 
-storiesOf("Counter", module).add("Counter Example", () => <Counter />);
+storiesOf("Counter", module).add("Counter", () => <Counter />);
 
 storiesOf("ImagePopper", module).add("Popper", () => <ImageWithPopUp />);
 
 storiesOf("Thumbs", module)
   .add("Default", () => <ThumbsUp />)
-  .add("ThumbsDown", () => <ThumbsUp liked={false} />)
-  .add("ThumbsUp", () => <ThumbsUp liked={true} />);
+  .add("Down", () => <ThumbsUp liked={false} />)
+  .add("Up", () => <ThumbsUp liked={true} />);
 
 const steps = ["foo", "bar", "test", "yup", "nope"];
 const stepChanged = step => {
@@ -33,3 +33,5 @@ const stepChanged = step => {
 storiesOf("Crumbs", module).add("Of Bread", () => (
   <BreadCrumbs steps={steps} stepChanged={stepChanged} />
 ));
+
+storiesOf("Photo", module).add("Swipe", () => (<PhotoSwipe/>));

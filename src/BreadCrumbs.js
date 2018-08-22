@@ -21,17 +21,11 @@ class BreadCrumbs extends Component {
     if (index === visitedIndex + 1) {
       this.setState({ visitedIndex: visitedIndex + 1 });
     }
-    console.log(
-      "index: " + index,
-      " visited: " + visitedIndex,
-      " current: " + currentIndex
-    );
   };
 
   render() {
     const { currentIndex, visitedIndex } = this.state;
     const { steps } = this.props;
-    console.log(steps);
     return (
       <div className="crumbs">
         {steps.map((step, index) => {

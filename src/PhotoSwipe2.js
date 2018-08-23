@@ -4,12 +4,10 @@ import Slider from "react-slick";
 class Test1 extends Component {
     render() {
         return (
-            <div>
                 <img
                     className="img"
                     src="http://farm8.staticflickr.com/7384/8730654121_05bca33388_z.jpg"
                 />
-            </div>
         );
     }
 }
@@ -28,7 +26,7 @@ class PhotoSwipe2 extends Component {
     return (
       <Slider {...settings}>
         <div>
-          <Test1/>
+            <Test1/>
         </div>
         <div>
           <img

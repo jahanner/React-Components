@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Counter from './Counter';
-import ThumbsUp from './ThumbsUp';
+import Counter from './Components/Counter';
+import ThumbsUp from './Components/ThumbsUp';
 
 class App extends Component {
   render() {

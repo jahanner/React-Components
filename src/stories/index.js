@@ -5,13 +5,13 @@ import { storiesOf } from "@storybook/react";
 import { linkTo } from "@storybook/addon-links";
 
 import { Welcome } from "@storybook/react/demo";
-import Counter from "../Counter";
-import ImageWithPopUp from "../ImageWithPopUp";
+import Counter from "../Components/Counter";
+import ImageWithPopUp from "../Components/ImageWithPopUp";
 import "../App.css";
-import ThumbsUp from "../ThumbsUp";
-import BreadCrumbs from "../BreadCrumbs";
-import PhotoSwipe from "../PhotoSwipe";
-import PhotoSwipe2 from "../PhotoSwipe2";
+import ThumbsUp from "../Components/ThumbsUp";
+import BreadCrumbs from "../Components/BreadCrumbs";
+import PhotoSwipe from "../Components/PhotoSwipe";
+import PhotoSwipe2 from "../Components/PhotoSwipe2";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 

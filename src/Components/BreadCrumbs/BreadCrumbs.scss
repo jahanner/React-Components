@@ -1,0 +1,36 @@
+
+.crumbs {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 50px;
+}
+
+.current-step {
+  height: 19px;
+  width: 19px;
+  border-radius: 50%;
+  background-color: green;
+  margin-left: 8px;
+  margin-top: 8px;
+}
+.current-crumb {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  border: solid 3px green;
+}
+
+.large-crumb {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: green;
+}
+
+.small-crumb {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: green;
+  margin-top: 12px;
+}

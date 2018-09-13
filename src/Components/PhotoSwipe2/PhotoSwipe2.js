@@ -1,15 +1,16 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
+import "./PhotoSwipe2.css";
 
 class Test1 extends Component {
-    render() {
-        return (
-                <img
-                    className="img"
-                    src="http://farm8.staticflickr.com/7384/8730654121_05bca33388_z.jpg"
-                />
-        );
-    }
+  render() {
+    return (
+      <img
+        className="img"
+        src="http://farm8.staticflickr.com/7384/8730654121_05bca33388_z.jpg"
+      />
+    );
+  }
 }
 
 class PhotoSwipe2 extends Component {
@@ -26,7 +27,7 @@ class PhotoSwipe2 extends Component {
     return (
       <Slider {...settings}>
         <div>
-            <Test1/>
+          <Test1 />
         </div>
         <div>
           <img

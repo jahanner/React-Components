@@ -1,0 +1,15 @@
+.img {
+  position: relative;
+  width: 100%;
+  background: no-repeat center;
+  background-size: cover;
+}
+
+.slick-prev {
+  left: 5% !important;
+  z-index: 1;
+}
+.slick-next {
+  right: 5% !important;
+  z-index: 1;
+}

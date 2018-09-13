@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { func, arrayOf, string } from "prop-types";
+import "./BreadCrumbs.css";
 
 class BreadCrumbs extends Component {
   static propTypes = {
@@ -36,14 +37,16 @@ class BreadCrumbs extends Component {
                 ? "large-crumb"
                 : "small-crumb";
           const innerStyle =
-            index === currentIndex ? { display: "inline-block" } : { display: "none" };
+            index === currentIndex
+              ? { display: "inline-block" }
+              : { display: "none" };
           return (
             <div
               className={cssClass}
               key={step}
               onClick={() => this.stepClicked(index)}
             >
-              <div className="current-step" style={innerStyle}/>
+              <div className="current-step" style={innerStyle} />
             </div>
           );
         })}

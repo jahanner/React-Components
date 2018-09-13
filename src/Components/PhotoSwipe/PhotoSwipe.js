@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import SwipeableViews from "react-swipeable-views";
+import './PhotoSwipe.css';
 
 class Test1 extends Component {
   render() {

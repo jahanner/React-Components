@@ -1,4 +1,5 @@
-import React, {Component} from 'react';
+import React, { Component } from "react";
+import "./Counter.css";
 
 class Counter extends Component {
   state = {
@@ -6,33 +7,32 @@ class Counter extends Component {
   };
 
   handleChange = event => {
-    const {value} = event.target;
+    const { value } = event.target;
     if (value >= 0) {
-      this.setState({value});
+      this.setState({ value });
     }
   };
 
   decrement = () => {
     if (this.state.value >= 1) {
-      this.setState(state => ({value: state.value - 1}));
+      this.setState(state => ({ value: state.value - 1 }));
       console.log(this.state.value);
     }
   };
 
   increment = () => {
-    this.setState(state => ({value: state.value + 1}));
+    this.setState(state => ({ value: state.value + 1 }));
     console.log(this.state.value);
   };
 
   render() {
-    // const plus = "\u002B";
-    // const minus = "\u2212";
+
     return (
       <div className="counter">
         <button onClick={this.decrement} className="testButton">
           -
         </button>
-        <input
+        <input className='input'
           type="number"
           onChange={this.handleChange}
           value={this.state.value}
